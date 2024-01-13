@@ -11,6 +11,8 @@
   width: auto;
   text-align: center;
   padding: 15px;
+  margin-left: -50px;
+  margin-top: 150px;
 }
 
 img {
@@ -23,12 +25,12 @@ body {
   height: 100vh;
   width: 100%;
   place-items: center;
-  background: linear-gradient(to right, #4a079c 0%, #400466 100%);
+  background: linear-gradient(to right, hsl(267, 93%, 22%) 0%, #160160 100%);
 }
 
-::selection {
+/* ::selection {
   background: #ff80bf;
-}
+} */
 
 .container {
   background: #fff;
@@ -38,11 +40,6 @@ body {
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(255, 255, 255, 0.15);
   
-.container form .title {
-  font-size: 30px;
-  font-weight: 600;
-  margin: 20px 0 10px 0;
-  position: relative;
 }
 .container .facebook a,
 .container .twitter a {
@@ -66,6 +63,7 @@ body {
 
 .container .twitter a {
   background: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+  color: #000000;
   margin: 20px 0 15px 0;
 }
 
@@ -97,6 +95,7 @@ body {
   white-space: nowrap;
   border: rgb(242, 242, 248) 1px solid;
   padding: 0px;
+  margin: 0px;
 }
 
 .twitter {
@@ -109,85 +108,96 @@ body {
 }
 /* Style for the "Sign In" options */
 .twitter a {
-  display: block;
-  text-decoration: none;
-  margin-bottom: 5px;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-/* Style for the icons */
-.twitter i {
-  margin-right: 5px;
-  line-height: 1;
-  vertical-align: middle;
-}
-
-/* "Sign In" with Apple */
-.twitter .fab.fa-apple {
-  color: #000000; /* Change font color for Apple */
-}
-
-/* "Sign In" with Facebook */
-.twitter .fab.fa-facebook {
-  color: #000000; /* Change font color for Facebook */
-}
-
-/* "Sign In" with Google */
-.twitter .fab.fa-google {
-  color: #000000; /* Change font color for Google */
-}
-
-/* "Sign In" with Email */
-.twitter .fab.fa-email {
-  color: #000000; /* Change font color for Email */
-}
-
-/* "Sign In" with Twitter */
-.twitter .fab.fa-twitter {
-  color: #000000; /* Change font color for Twitter */
-}
-
-/* Add a clear property to ensure each button appears on a new line */
-.twitter:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.title {
-  text-align: right;
-}
-.title1 {
-  text-align: right;
-  margin-top: -40px;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    text-decoration: none;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+  }
   
-}
-.cancel {
-  text-align: center;
-}
+  /* Style for the icons */
+  .twitter i {
+    margin-right: 5px; /* Add margin between icon and text */
+    line-height: 1;
+    margin-bottom: px;
 
-.cancel a {
-  text-decoration: none;
-  color: rgb(238, 229, 229); /* Change font color for Cancel button */
-  display: block;
-  margin-top: 300px;
-}
-
-.cancel i {
-  margin-right: 5px;
-
-}
-
+  }
   
-
-.title3 {
-  margin-left: px;
-  margin-top: -40px;
+  /* Add a clear property to ensure each button appears on a new line */
+  .twitter:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
   
-}
-
-.title4{
-  margin-left: px;
-  margin-top: -70px;
-}
+  .title {
+    text-align: right;
+    color: #eff1f2;
+  }
+  
+  .title1 {
+    text-align: right;
+    margin-top: -40px;
+    color: #eff1f2;
+  }
+  
+  .cancel {
+    text-align: center;
+  }
+  
+  .cancel a {
+    text-decoration: none;
+    color: rgb(238, 229, 229); /* Change font color for Cancel button */
+    display: block;
+    margin-top: 300px;
+    font-size:x-large;  
+  }
+  
+  .cancel i {
+    margin-right: 5px;
+  }
+  
+  .title3 {
+    margin-left: -50px;
+    margin-top: -50px;
+    color: #eff1f2;
+    font-size: x-large;
+  }
+  
+  .title4 {
+    margin-left: px;
+    margin-top: -70px;
+    color: #eff1f2;
+  }
+  
+  .title5 {
+    color: #eff1f2;
+    margin-left: 10px;
+    font-size: x-large;
+  }
+  
+    
+  #sandalrectangle2{
+    position: absolute;
+    margin-top: -54px;
+    margin-left: 10px ;
+  }
+  #sandalrectangle3{
+    position: absolute;
+    margin-top: -150px;
+    margin-left: -px ;
+  }
+  #sandalrectangle4{
+    position: absolute;
+    margin-top: -234px;
+    margin-left: 5px ;
+  }
+  
+  #sandalrectangle5{
+    position: absolute;
+    margin-top: -310px;
+    margin-left: 10px ;
+  }
+  
+  
