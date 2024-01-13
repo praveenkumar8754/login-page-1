@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  width: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+img {
+  max-width: 30%;
+  height: auto;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(to right, #4a079c 0%, #400466 100%);
+}
+
+::selection {
+  background: #ff80bf;
+}
+
+.container {
+  background: #fff;
+  max-width: 400px;
+  width: 100%;
+  padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container form .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  position: relative;
+}
+
+.container form .title:before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 33px;
+  left: 0px;
+  bottom: 3px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #ed4599 0%, #ff0080 100%);
+}
+
+.container form .input-box {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.container form .input-box input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 18px;
+  border: none;
+}
+
+.container form .underline::before,
+.container form .underline::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.container form .underline::before {
+  background: #ccc;
+}
+
+.container form .underline::after {
+  background: #ed4599;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+
+.container form .input-box input:focus ~ .underline::after,
+.container form .input-box input:valid ~ .underline::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.container form .button {
+  margin: 40px 0 20px 0;
+}
+
+.container .input-box input[type="submit"] {
+  background: #ed4599;
+  font-size: 18px;
+  color: #040101;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container .input-box input[type="submit"]:hover {
+  background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+}
+
+.container .option {
+  font-size: 14px;
+  text-align: center;
+}
+
+.container .option div {
+  display: flex;
+  align-items: center;
+}
+
+.container .facebook a,
+.container .twitter a {
+  display: block;
+  height: 50px;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 20px;
+  line-height: 50px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.container .facebook i,
+.container .twitter i {
+  padding-right: 12px;
+  font-size: 20px;
+}
+
+.container .twitter a {
+  background: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+  margin: 20px 0 15px 0;
+}
+
+.container .twitter a:hover {
+  background: linear-gradient(to left, #0950ea 0%, #240a98 100%);
+  margin: 20px 0 15px 0;
+}
+
+.container .facebook a {
+  background: linear-gradient(to right, #eff1f2 0%, #fdfdff 100%);
+  margin: 20px 0 50px 0;
+}
+
+.container .facebook a:hover {
+  background: linear-gradient(to left, #efefef 0%, #f2f3f7 100%);
+  margin: 20px 0 50px 0;
+}
+
+.facebook {
+  background: linear-gradient(to right, #0e7bb1 0%, #e3e3e8 100%);
+  margin: 20px 0 50px 0;
+}
+
+
+
+.container {
+  width: 1500px;
+  height: 0px;
+  white-space: nowrap;
+  border: rgb(242, 242, 248) 1px solid;
+  padding: 0px;
+}
+
+.twitter {
+  margin-bottom: 10px;
+}
+
+.twitter img {
+  display: block;
+  margin-bottom: -40px;
+}
+
+/* Style for the "Sign In" options */
+.twitter a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Style for the icons */
+.twitter i {
+  margin-right: 5px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* "Sign In" with Apple */
+.twitter .fab.fa-apple {
+  color: #000000; /* Change font color for Apple */
+}
+
+/* "Sign In" with Facebook */
+.twitter .fab.fa-facebook {
+  color: #000000; /* Change font color for Facebook */
+}
+
+/* "Sign In" with Google */
+.twitter .fab.fa-google {
+  color: #000000; /* Change font color for Google */
+}
+
+/* "Sign In" with Email */
+.twitter .fab.fa-email {
+  color: #000000; /* Change font color for Email */
+}
+
+/* "Sign In" with Twitter */
+.twitter .fab.fa-twitter {
+  color: #000000; /* Change font color for Twitter */
+}
+
+/* Add a clear property to ensure each button appears on a new line */
+.twitter:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.title {
+  text-align: right;
+}
+.title1 {
+  text-align: right;
+  margin-top: -40px;
+  
+}
+.cancel {
+  text-align: center;
+}
+
+.cancel a {
+  text-decoration: none;
+  color: rgb(238, 229, 229); /* Change font color for Cancel button */
+  display: block;
+  margin-top: 300px;
+}
+
+.cancel i {
+  margin-right: 5px;
+
+}
+
+  
+
+.title3 {
+  margin-left: px;
+  margin-top: -40px;
+  
+}
+
+.title4{
+  margin-left: px;
+  margin-top: -70px;
+}
