@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Responsive Login Form HTML CSS | CodingNepal</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <title>Responsive Login Form HTML CSS | CodingNepal</title>
+  <link rel="stylesheet" href="style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-   <div class="logo">
-      <img src="images/smule.png-removebg-preview (1).png" id="sandalrectangle"></div>
-    <div class="title5">Sign up or log in to your Smule </div>
-    <div class="title3">account.</div>
-    <div class="title">By selecting one of the Account Creation Options</div>
-    <div class="title1">div below, you agree to Smule's Terms of Service</div>
-    <div class="title4"> Privacy Policy</div>
-   </div>
-    <div class="container">
-        <div class="input-box button">
-        </div>
-      </form>
-      <div class="twitter">
-        <a href="#"><i class="fab fa-apple"></i></i>Sign in With Apple</a>
-      </div>
-    
-      <div class="twitter">
-        <a href="#"><i class="fab fa-facebook"></i>Login With Facebook</a>
-      </div>
-      <div class="twitter">
-        <a href="#"><i class="fab fa-google"></i>Sign in With Google</a>
-      </div>
-      
-      <div class="twitter">
-        <a href="#"><i class="fab fa-email"></i>Sign in With Email</a>
-      </div>
-      <img src="images/envelope-fill.svg" id="sandalrectangle2">
-      <img src="images/Screenshot 2024-01-13 120320.png" id="sandalrectangle3">
-      <img src="images/icons8-facebook-30.png" id="sandalrectangle4">
-      <img src="images/apple.svg" id="sandalrectangle5">
+  <meta name="google-signin-client_id" content="121326844781-0hhs3aefc6lc47gd3pj94m06hta8rqsf.apps.googleusercontent.com">
+</head>
+<body>
+  <div class="logo">
+    <img src="images/smule.png-removebg-preview (1).png" id="sandalrectangle">
+  </div>
+  <div class="title5">Sign up or log in to your Smule </div>
+  <div class="title3">account.</div>
+  <div class="title">By selecting one of the Account Creation Options</div>
+  <div class="title1">div below, you agree to Smule's Terms of Service</div>
+  <div class="title4"> Privacy Policy</div>
+  <div id="googleUserId"></div>
+  <div class="container">
+    <div class="input-box button"></div>
+    <div class="twitter">
+      <a href="#"><i class="fab fa-apple"></i>Sign in With Apple</a>
     </div>
-    <div class="cancel">
-      <a href="#"><i class="cancel"></i>Cancel</a>
-  </body>
+    <div class="twitter">
+      <a href="#" id="facebook-login"><i class="fab fa-facebook"></i>Login With Facebook</a>
+    </div>
+    <div class="twitter">
+      <a href="#" onclick="signInWithGoogle()"><i class="fab fa-google"></i>Sign in With Google</a>
+    </div>
+    <div class="twitter">
+      <a href="#"><i class="fab fa-email"></i>Sign in With Email</a>
+    </div>
+    <img src="images/envelope-fill.svg" id="sandalrectangle2">
+    <img src="images/Screenshot 2024-01-13 120320.png" id="sandalrectangle3">
+    <img src="images/icons8-facebook-30.png" id="sandalrectangle4">
+    <img src="images/apple.svg" id="sandalrectangle5">
+  </div>
+  <div class="cancel">
+    <a href="#"><i class="cancel"></i>Cancel</a>
+  </div>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!-- <script src="https://accounts.google.com/gsi/client" async defer></script> -->
+  <script src="script.js"></script>
+</body>
 </html>
