@@ -5,7 +5,7 @@
   <title>Responsive Login Form HTML CSS | CodingNepal</title>
   <link rel="stylesheet" href="style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-signin-client_id" content="667631551112-rhoobdjk0st2co6pn28ktrbcdjpd9gu9.apps.googleusercontent.com">
+  <meta name="google-signin-client_id" content="667631551112-8kngmj2mfup0shand5ncmam4fms4ljb6.apps.googleusercontent.com">
 </head>
 <body>
   <div class="logo">
@@ -26,7 +26,7 @@
       <a href="#" id="facebook-login"><i class="fab fa-facebook"></i>Login With Facebook</a>
     </div>
     <div class="twitter">
-      <a href="#" onclick="signInWithGoogle()"><i class="fab fa-google"></i>Sign in With Google</a>
+      <a href="#" ><i class="fab fa-google"></i>Sign in With Google</a>
     </div>
     <div class="twitter">
       <a href="#"><i class="fab fa-email"></i>Sign in With Email</a>
@@ -36,11 +36,29 @@
     <img src="images/icons8-facebook-30.png" id="sandalrectangle4">
     <img src="images/apple.svg" id="sandalrectangle5">
   </div>
+  <div id="btnWrap">
+    <div id="g_id_onload"
+        data-client_id="667631551112-8kngmj2mfup0shand5ncmam4fms4ljb6.apps.googleusercontent.com"
+        data-context="signin"
+        data-ux_mode="popup"
+        data-callback="handleCredentialResponse"
+        data-auto_prompt="false">
+
+    </div>
+    
+    <div class="g_id_signin"
+        data-type="standard"
+        data-shape="rectangular"
+        data-theme="outline"
+        data-text="signin_with"
+        data-size="large"
+        data-logo_alignment="left">
+    </div>
+    </div>
   <div class="cancel">
     <a href="#"><i class="cancel"></i>Cancel</a>                                                                      
   </div>
-  <!-- <script src="https://apis.google.com/js/api.js" async defer></script> -->
-  <script src="https://apis.google.com/js/api.js" async defer onload="loadGoogleAPI()"></script>
+  <script src="https://accounts.google.com/gsi/client" async></script>
   <script src="script.js"></script>
 </body>
 </html>
