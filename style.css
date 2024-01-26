@@ -307,3 +307,9 @@ body {
     margin-top: -310px;
     margin-left: 10px ;
   }
+
+  .g_id_signin{
+    position: absolute;
+    margin-top: 140px;
+    margin-left: -190px ;
+  }
